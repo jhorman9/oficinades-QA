@@ -182,7 +182,13 @@ const ContractDetailModal = ({setShow, data, show, handleClose, nicById, setIsRe
                     }
                 </div>
                 <div className='mt-2 d-flex justify-content-between w-100'>
-                    <button className='btn btn-danger' onClick={(e) => { e.preventDefault(); RejectedClient(nicById.contractDetailSistem?.nicCode)}}>Rechazar</button>
+                    {
+                        data != 'Rejected' && (
+                            <>
+                            <button className='btn btn-danger' onClick={(e) => { e.preventDefault(); RejectedClient(nicById.contractDetailSistem?.nicCode)}}>Rechazar</button>                            
+                            </>
+                        )
+                    }
                     {
                     data == 'Pending' && (
                             <>
