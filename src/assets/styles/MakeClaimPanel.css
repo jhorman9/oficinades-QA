@@ -1,0 +1,101 @@
+.make__claim .make__claim__container{
+    padding: 0 14px;
+}
+
+.btn-back{
+    cursor: pointer;
+    width: fit-content;
+}
+
+.btn-back svg{
+    width: fit-content;
+    transform: rotate(0.5turn);
+    -webkit-transform: rotate(0.5turn);
+    -moz-transform: rotate(0.5turn);
+    -ms-transform: rotate(0.5turn);
+    -o-transform: rotate(0.5turn);
+}
+
+.make__claim .make__claim__body__content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 14px;
+}
+
+@media (max-width: 991px) {
+    .make__claim .make__claim__body__content{
+        grid-template-columns: 1fr;
+    }
+}
+
+.make__claim .make__claim__form .make__claim__info{
+    box-shadow: 0 0 7px #00000030;
+    padding: 14px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    background-color: var(--secondaryS);
+}
+
+.make__claim .make__claim__form .make__claim__warning__content{
+    padding: 7px;
+    background: linear-gradient(0deg, rgba(235, 239, 34, 0.5), rgba(235, 239, 34, 0.5)), linear-gradient(0deg, rgba(235, 239, 34, 0.08), rgba(235, 239, 34, 0.08));
+    color: #A0A314;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+
+.make__claim__warning .make__claim__warning__btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.make__claim .make__claim__create__form .input__group{
+    display: flex;
+    gap: 14px;
+}
+
+.make__claim .make__claim__create__form .input__group .claim__input,
+.make__claim .make__claim__create__form .claim__select{
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.make__claim .btn__send__claim{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2px;
+}
+
+.make__claim .make__claim__asep{
+    box-shadow: 0 0 7px #00000030;
+    padding: 14px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    height: fit-content;
+    background-color: var(--secondaryS);
+}
+
+.make__claim .make__claim__asep img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 7px;
+    mix-blend-mode: multiply;
+}
+
+.make__claim .make__claim__asep p{
+    font-size: 14px;
+}

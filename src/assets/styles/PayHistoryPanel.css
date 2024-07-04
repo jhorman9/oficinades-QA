@@ -1,0 +1,13 @@
+.pay__history__panel{
+    padding: 35px 14px !important;
+}
+
+.pay__history__panel h5{
+    color: #010101;
+    font-weight: 700;
+}
+
+.pay__history__panel thead{
+    background-color: rgba(30, 100, 143, 0.155);
+    color: var(--primary);
+}

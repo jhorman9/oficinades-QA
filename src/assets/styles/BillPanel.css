@@ -1,0 +1,127 @@
+.panel__bill{
+    min-height: calc(100vh - 71px);
+    padding: 35px 0;
+}
+
+.panel__bill__container{
+    padding: 0 14px;
+}
+
+.panel__bill h5{
+    color: #010101;
+    font-weight: 700;
+}
+
+.panel__bill__info__header{
+    box-shadow: 0 0 7px #00000030;
+    padding: 28px;
+    border-radius: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 14px;
+    background-color: var(--secondaryS);
+}
+
+@media (max-width: 1199px) {
+    .panel__bill__info__header{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    .panel__bill__info__header{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 1199px){
+    .bill__item1{
+        order: 3;
+    }
+    .bill__item2{
+        order: 1;
+    }
+    .bill__item3{
+        order: 2;
+    }
+    .bill__item4{
+        order: 4;
+    }
+}
+
+@media(max-width: 400px){
+    .bill__item1{
+        order: 1;
+    }
+    .bill__item2{
+        order: 2;
+    }
+    .bill__item3{
+        order: 3;
+    }
+    .bill__item4{
+        order: 4;
+    }
+}
+
+/* .panel__bill .panel__bill__water{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.panel__bill__toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    max-width: 300px;
+}
+
+.panel__bill .panel__bill__toggle button{
+    line-height: 30px;
+    height: auto;
+    align-items: center;
+}
+
+.panel__bill .panel__bill__toggle button svg .cls-26{
+    stroke: #fff !important;
+}
+
+.panel__bill .panel__bill__toggle button:hover svg .cls-26{
+    stroke: var(--primary) !important;
+}
+
+.panel__bill .panel__bill__toggle button svg .cls-28{
+    stroke: var(--primary);
+}
+
+.panel__bill .panel__bill__toggle button:hover svg .cls-28{
+    stroke: #fff;
+}
+
+.panel__bill .panel__bill__toggle button svg{
+    stroke: var(--primary);
+}
+
+
+.panel__bill .table__bill__header{
+    background-color: rgba(30, 100, 143, 0.155);
+    color: var(--primary);
+}
+
+.table__bill{
+    box-shadow: 0 0 7px #00000030;
+    padding: 28px;
+    border-radius: 14px;
+    background-color: var(--secondaryS);
+}
+
+@media(max-width: 991px){
+    .table__bill__header.pays{
+        justify-content: center !important;
+        align-items: center !important;
+        display: flex !important;
+    }
+}
+

@@ -1,0 +1,119 @@
+.notificationAdmin .notificationAdmin__body{
+    box-shadow: 0 0 7px #00000030;
+    padding: 28px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    background-color: var(--secondaryS);
+}
+
+.notificationAdmin thead{
+    background-color: rgba(30, 100, 143, 0.155);
+    color: var(--primary);
+}
+
+.notificationAdmin tbody tr td.text{
+    transition: 0.4s ease;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+@media (max-width: 991px) {
+    .notificationAdmin tbody tr td.text{
+        -webkit-line-clamp: 2;
+    }
+}
+
+@media (max-width: 575px) {
+    .notificationAdmin tbody tr td.text{
+        -webkit-line-clamp: 3;
+    }
+}
+
+.notificationAdmin .dataTable tbody td{
+    line-height: 40px;
+}
+
+.notificationAdmin table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before{
+    display: block;
+}
+
+.notificationAdmin .notificationAdmin__btn-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .notificationAdmin .notificationAdmin__btn-top{
+        flex-direction: column;
+    }
+}
+
+/* input#react-select-3-input, .css-w9q2zk-Input2{
+    min-height: 30px;
+}
+
+.css-w9q2zk-Input2 input{
+    min-height: 30px;
+}
+
+.css-art2ul-ValueContainer2{
+    height: 39px;
+} */
+
+.css-b62m3t-container{
+    width: 100%;
+}
+
+@media(max-width: 575px){
+    .modal__createNotification .modal__inputs__group{
+        gap: 0;
+    }
+}
+
+.modal__createNotification .modal__inputs__group{
+    flex-direction: column;
+    gap: 0;
+}
+
+.dropzone {
+    border: 2px dashed #cccccc;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .dropzone.active {
+    border-color: #2196f3;
+  }
+
+.icon__dropzone {
+    width: 40px;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.margin-bottom-14{
+    margin-bottom: 14px;
+}
+
+.modal__Add-ChooseNic .modal__inputs__group .modal__inputs__group__input{
+    margin-bottom: 14px;
+}
+
+.css-b62m3t-container{
+    margin-bottom: 14px;
+}
+
+#modal_edit .modal__inputs__group{
+    flex-direction: column;
+}

@@ -1,0 +1,90 @@
+.notification {
+    padding: 35px 14px !important;
+}
+
+.notification .notification__table{
+  box-shadow: 0 0 7px #00000030;
+  padding: 28px;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  background-color: var(--secondaryS);
+}
+
+.notification .notification__table__c{
+  padding-top: 14px;
+}
+
+.notification thead {
+  background-color: rgba(30, 100, 143, 0.155);
+  color: var(--primary);
+}
+
+.notification td.item1{
+  min-width: 110px;
+}
+
+.notification tr td.child ul li:first-child{
+  transition: 0.4s ease;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.notification td.item2{
+  transition: 0.4s ease;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.notification .dataTable tbody td {
+  padding: 4px 10px;
+  line-height: 40px;
+}
+
+.notification .notification__title__date{
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.notification .notification__title__date h4{
+  flex: 1;
+}
+
+.notification .notification__file img{
+  width: 60px;
+  height: 60px;
+}
+
+.notification thead tr th:last-child{
+  width: 55px !important;
+}
+
+.cursor-pointer.noRead{
+  background-color: var(--primary) !important;
+  color: #fff !important;
+}
+
+.cursor-pointer.read{
+  background-color: #ebeaee !important;
+}
+
+.notification__header__csv{
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media(max-width: 991px){
+  .notification__header__csv{
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0.5rem;
+    align-items: center;
+  }
+}

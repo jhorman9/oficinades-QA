@@ -1,0 +1,297 @@
+.bold{
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-justify-between{
+    justify-content: space-between;
+}
+.align-items-end{
+    align-items: flex-end;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-equals{
+    flex: 1 1 0px;
+    width: 0;
+}
+.column-gap-5px{
+    column-gap: 5px;
+}
+.column-gap-10px{
+    column-gap: 10px;
+}
+.button-print{
+    width: 21.59cm;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 35px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+#container {
+    width: 21.59cm;
+    height: 27.94cm;
+    display: block;
+    margin: 0 auto;
+    padding: 0.8cm 1.2cm
+}
+#factura table, p, div {
+  font-family: 'chelvetica', Arial, sans-serif;
+}
+#factura h2{
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+#celeste {
+  background-color: rgba(242, 249, 250, 0.5);
+  margin-bottom: 3px;
+  padding: 5px;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+#factura #header {
+  text-align: center;
+  height:60px;
+  display: flex;
+  align-items: flex-end;
+}
+
+#factura .header-content {
+    flex:1;
+  }
+
+#factura #header h2 {
+  margin: 0;
+}
+
+#aseo {
+  background-color: rgba(255, 240, 224,0.5);
+  margin-top: 20px;
+}
+.table-collapse table {
+  border-collapse: collapse;
+}
+.table-orange table, .table-orange th, .table-orange td{
+  border: 1px solid #ff9977;
+}
+
+#factura td, #factura th,  #factura div, #factura p {
+  font-size: 10px;
+}
+table td{
+  padding-right:1px;
+  padding-left:1px;
+}
+.hilera {
+  width:100%;
+  vertical-align: top;
+}
+.clean-line {
+  width:100%;
+}
+.box-first-title{
+    margin: 0;
+    text-align: center;
+    min-height: 11.2px;
+}
+.codigo-de-barras{
+  /* width: 100%; */
+  height: 35px;
+  object-fit: cover;
+  object-position: bottom;
+  max-width: 357px;
+    width: 6.2cm;
+}
+.altura {
+  height:120px;
+}
+
+.alturapequena {
+  height:30px;
+}
+
+.alturapequena p {
+  padding:0; margin:0;
+}
+.outline {
+  border: 1px solid #93dcff;
+  padding: 6px 4px;
+}
+
+.orangeoutline {
+  border: 1px solid #ffac91;
+  padding: 6px 4px;
+}
+
+.factura-indent {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.without-outline {
+  border: 0;
+}
+
+#factura hr {
+  border:#000 1px dashed;
+  margin-top:5px;
+  margin-bottom: 5px;
+}
+
+#factura p {
+  font-size:10px;
+}
+
+.athird, .athird table {
+  width: 33%;
+  float: left;
+  font-size: 16px;
+}
+.afour {
+  font-size: 18px;
+}
+.afour td{
+  height: 26px
+}
+
+.ahalf, .ahalf table {
+  width: 49%;
+  font-size: 18px;
+}
+
+.datos-cliente table{
+  font-size: 18px;
+}
+
+.right {
+  float:right;
+}
+
+.left {
+  float: left;
+}
+.apartado{
+    margin-left: -24px;
+    margin-top: -17px;
+    position: absolute;
+    font-size: 8px;
+    top: 30px;
+}
+.ruc{
+  float: right;
+  margin-left: 600px;
+  margin-top: -17px;
+  position: absolute;
+  font-size: 8px;
+}
+.lineafinal p{
+  padding-left: 200px;
+}
+.font-uppercase{
+  text-transform: uppercase;
+}
+.line-separator-container{
+    position: relative;
+}
+.line-separator-container::before {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 15px;
+    content: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDE3LjQgMTMuMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTcuNCAxMy4xOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojOTNEQ0ZGO30NCjwvc3R5bGU+DQo8Zz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNC41LDEyLjdjMC44LTAuNCwxLjMtMS4xLDEuNS0xLjhjMC4yLTAuNiwwLjEtMS4xLTAuMi0xLjZsMi42LTEuNWMxLjksMC45LDYsMyw2LjcsMy40DQoJCWMwLjgsMC41LDEuOS0wLjQsMS45LTAuNGwtNi45LTMuOWw2LjktMy45YzAsMC0xLTAuOS0xLjktMC40Yy0wLjcsMC40LTQuOCwyLjUtNi43LDMuNEw1LjgsNC4zQzYuMSwzLjgsNi4xLDMuMyw2LDIuNw0KCQlDNS44LDIsNS4zLDEuMyw0LjUsMC45Yy0xLjQtMC44LTMtMC41LTMuNiwwLjdDMC42LDIsMC41LDIuNiwwLjcsMy4yQzAuOSwzLjksMS40LDQuNiwyLjEsNWMwLjMsMC4yLDAuNywwLjMsMSwwLjRoMGMwLDAsMCwwLDAsMA0KCQljMCwwLDAuMSwwLDAuMSwwYzIuMiwwLjMsMy4zLDAuOSwzLjgsMS40Yy0wLjUsMC40LTEuNiwxLTMuOCwxLjRjMCwwLTAuMSwwLTAuMSwwYzAsMCwwLDAsMCwwaDBjLTAuMywwLjEtMC43LDAuMi0xLDAuNA0KCQlDMS40LDksMC45LDkuNiwwLjcsMTAuM2MtMC4yLDAuNi0wLjEsMS4yLDAuMiwxLjdDMS41LDEzLjIsMy4yLDEzLjQsNC41LDEyLjd6IE0yLjgsMy45QzIuNCwzLjcsMiwzLjMsMS45LDIuOQ0KCQljMC0wLjItMC4xLTAuNCwwLjEtMC43QzIuMywxLjcsMy4xLDEuNiwzLjksMmMwLjQsMC4zLDAuOCwwLjYsMC45LDFjMCwwLjIsMC4xLDAuNC0wLjEsMC43QzQuNCw0LjIsMy41LDQuMywyLjgsMy45eiBNMiwxMS40DQoJCWMtMC4xLTAuMi0wLjEtMC41LTAuMS0wLjdjMC4xLTAuNCwwLjQtMC44LDAuOS0xYzAuNy0wLjQsMS42LTAuMywxLjksMC4yYzAuMSwwLjIsMC4xLDAuNSwwLjEsMC43Yy0wLjEsMC40LTAuNCwwLjgtMC45LDENCgkJQzMuMSwxMiwyLjMsMTEuOSwyLDExLjR6Ii8+DQo8L2c+DQo8L3N2Zz4NCg==");
+  }
+.line-separator-container .line-separator {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    height:1px;
+    width: calc(100% + 35px);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px dashed;
+    border-color: #93dcff;
+}
+.deuda-aseo-table{
+    width: 100%;
+    border-collapse: collapse;
+    tr{
+        display: flex;
+        th{
+            padding: 5px;
+        }
+        td{
+            flex: 1 1 0px;
+            width:0;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid #ffac91;
+            padding: 2px;
+        }
+    }
+    .thead{
+        padding:5px;
+    }
+}
+.table-invoice-data{
+    font-size: 10px;
+    tr{
+        display: flex;
+        td{
+            flex: 1 1 0px;
+            width:0;
+        }
+    }
+    p{
+        margin: 0;
+        font-weight: bold;
+    }
+}
+.table-over-aseo{
+    width: 100%;
+    tr{
+        td:nth-child(1){
+            width: 5cm;
+        }
+    }
+}
+
+#container {
+    background: url('../images/bg-idaan-bill.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.text-float{
+  text-align: center;
+  width: 100%;
+  top: 3px !important;
+}
+
+.text-float > p{
+  margin-bottom: 0;
+  font-size: 14px !important;
+  font-weight: bold;
+}

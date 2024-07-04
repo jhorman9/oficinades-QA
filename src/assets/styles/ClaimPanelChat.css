@@ -1,0 +1,122 @@
+.claim__panel__chat{
+    padding: 35px 14px !important;
+}
+
+/* .claim__panel__chat .claim__panel__chat__body .claim__panel__two{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 14px;
+} */
+
+.claim__panel__chat .claim__panel__chat__body .claim__panel__two .chat__content{
+    box-shadow: 0 0 7px #00000030;
+    padding: 14px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    background-color: var(--secondaryS);
+} 
+
+.claim__panel__chat .claim__conversation {
+    padding: 14px 0;
+}
+
+.claim__panel__chat .claim__panel__chat__body .claim__panel__two .data__client__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+} 
+
+@media (max-width: 768px) {
+    .claim__panel__chat .claim__panel__chat__body .claim__panel__two .data__client__content{
+        grid-template-columns: 1fr;
+    }
+}
+
+.claim__panel__chat .claim__panel__chat__body .claim__conversation .claim__conversation__item{
+    display: flex;
+    gap: 7px;
+    margin-bottom: 7px;
+}
+
+.claim__panel__chat .claim__panel__chat__body .claim__conversation .claim__photo{
+    background-color: #573492;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+
+.claim__panel__chat .claim__panel__chat__body .claim__conversation .claim__photo span{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.claim__panel__chat .claim__panel__chat__body .claim__conversation .claim__text{
+    background: #d5e5ff;
+    padding: 14px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+
+.claim__panel__chat .claim__panel__chat__body .claim__conversation .claim__text p{
+    font-size: 14px;
+}
+
+.claim__panel__chat .claim__panel__chat__body .claim__conversation .claim__input__chat{
+    position: relative;
+}
+
+.claim__panel__chat .claim__panel__chat__body .claim__conversation .claim__input__chat textarea{
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 7px;
+    min-height: 100px;
+}
+
+.claim__panel__chat .claim__panel__chat__body .claim__conversation .claim__input__chat .absolute{
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    cursor: pointer;
+}
+
+.claim__panel__chat .claim__data__client{
+    box-shadow: 0 0 7px #00000030;
+    padding: 28px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    background-color: var(--secondaryS);
+}
+
+.claim__panel__chat .claim__data__client.item-1{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.claim__panel__chat .claim__data__client.item-2{
+    background-color: #d1e1eb;
+    color: var(--primary);
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter{
+    text-align: start !important;
+}

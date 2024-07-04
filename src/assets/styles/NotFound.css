@@ -1,0 +1,36 @@
+.NotFound{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* background: url('../images/icons/combination-colors.svg');
+    background-position: bottom;
+    background-repeat: no-repeat; */
+    text-align: center;
+    padding: 7px;
+}
+
+.NotFound h1, .NotFound h2, .NotFound a{
+    color: #111725 !important;
+    line-height: 28px;
+}
+
+.NotFound a{
+    background-color: var(--primary);
+    color: #fff !important;
+}
+
+.NotFound a:hover{
+    background-color: var(--primary);
+}
+
+.NotFound img.notFoundPNG{
+    max-height: calc(100vh - 200px);
+}
+
+@media (max-width: 620px) {
+    .NotFound img.notFoundPNG{
+        width: 100%;
+    }
+}

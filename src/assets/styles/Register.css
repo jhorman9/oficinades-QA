@@ -1,0 +1,65 @@
+.form-register{
+    height: auto;
+}
+
+.form-register .form-register_header__title h2{
+    text-align: center;
+    color: #111725;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 24px;
+}
+
+@media (max-width: 575px) {
+    .form-register .form-register_header__title h2{
+        font-size: 18px;
+    }
+}
+
+.form-register .form__register__group {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+@media (max-width: 575px) {
+    .form-register .form__register__group {
+        flex-direction: column;
+    }
+}
+
+.form-register .form__register__group .form-login_input-password_content{
+    width: 100%;
+ }
+
+.form-register select{
+    width: 100%;
+    margin-top: 7px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: none;
+    padding: 0 0px 0 14px;
+    border: 1px solid rgba(30, 100, 143, 0.50);
+    background: rgba(30, 100, 143, 0.03);
+    height: 39px;
+    color: #677081;
+}
+
+.form-register input[type="checkbox"]{
+    width: fit-content !important;
+    height: fit-content !important;
+}
+
+.form-register .form__terms-service{
+    margin-top: 14px;
+}
+
+.form-register .form__terms-service__checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}

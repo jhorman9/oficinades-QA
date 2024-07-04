@@ -1,0 +1,37 @@
+.verifyEmail{
+    background: url('../images/icons/combination-colors.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verifyEmail .verifyEmailContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 532px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--primary);
+    padding: 30px;
+    margin: 0 14px;
+}
+
+.verifyEmail button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font: 14px;
+    color: var(--primary);
+    padding: 0;
+}
+
+.verifyEmail figure{
+    margin: 0 0 16px 0;
+}

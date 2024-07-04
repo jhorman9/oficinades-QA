@@ -1,0 +1,100 @@
+.admin__customer{
+
+}
+
+.admin__customer .admin__customer__container{
+    box-shadow: 0 0 7px #00000030;
+    padding: 28px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    background-color: var(--secondaryS);
+}
+
+.admin__customer .customer__name__image{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.admin__customer .custom__profile__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .admin__customer .custom__profile__header{
+        flex-direction: column;
+        align-items: start;
+        gap: 7px;
+    }
+}
+
+.customer__date__register{
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+}
+
+.admin__customer .customer__rounded__letter{
+    background-color: #573492;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid;
+    font-size: 28px;
+}
+
+@media(max-width: 767px){
+    .admin__customer .customer__rounded__letter{
+        width: 75px;
+        height: 75px;
+        font-size: 18px;
+    }
+}
+
+.admin__customer .isActived-rounded{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.customer__body .customer__contract ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 14px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 14px;
+}
+
+.customer__body .customer__contract ul li {
+    padding: 14px;
+    box-shadow: 0 0 7px #00000030;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}

@@ -1,0 +1,178 @@
+
+.nav__info__toggle{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav__info__toggle .nav__profile__user{
+    background-color: #573492;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid ;
+    line-height: 48px;
+    font-size: 20px;
+}
+
+.nav__info__toggle .nav-bar_icon__notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 35px;
+    height: 35px !important;
+}
+
+.nav__info__toggle .nav-bar_icon__notification img{
+    width: 35px;
+    height: 35px;
+}
+
+.nav__info__toggle .nav-bar_icon__notification button{
+    height: 40px !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.nav__info__toggle .nav-bar_icon__notification button:hover{
+    background-color: transparent  !important;
+}
+
+.nav__info__toggle .nav-bar_icon__notification .dropdown-menu {
+    left: -120px;
+    top: 35px;
+}
+
+.nav__info__toggle .nav-bar_icon__notification .dropdown-item{
+    color: #677081 !important;
+}
+
+.nav__info__toggle .nav-bar_icon__notification .dropdown-item.active,
+.nav__info__toggle .nav-bar_icon__notification .dropdown-item:active
+{
+    background-color: transparent !important;
+}
+
+.nav__info__toggle .nav-bar__quantity{
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.nav__info__toggle .navbar-nav{
+    gap: 14px;
+}
+
+.navbar-expand .navbar-nav .dropdown-menu{
+    padding: 7px 14px;
+}
+
+.nav__info__toggle .dropdown button{
+    padding: 0 !important;
+    border: none !important;
+}
+
+.nav__info__toggle .dropdown a {
+    padding: 0 !important;
+    background-color: #fff;
+    color: #677081;
+    line-height: 28px;
+}
+
+.nav__info__toggle .dropdown a.dropRed  {
+    color: #FF7373;
+}
+
+.nav__info__toggle .dropdown-toggle::after{
+    content: none !important;
+}
+
+.nav__info__toggle .nav-bar_icon__notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav__profile__user .dropdown-menu{
+    left: -148px !important;
+}
+
+.nav__profile__user .dropdown-item{
+    line-height: 18px;
+}
+
+.nav__profile__user button{
+    background-color: transparent !important;
+    border: none !important;
+    font-weight: 600;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    line-height: 0;
+    height: auto;
+}
+
+.nav__profile__user button:hover{
+    background-color: transparent !important;
+    border: none !important;
+    color: #fff !important;
+}
+
+.nav__profile__user .dropdown-item{
+    color: #677081 !important;
+}
+
+.nav__profile__user .dropdown-item:hover{
+    color: #fff !important;
+}
+
+.nav__profile__user .dropdown-item.active, .nav__profile__user .dropdown-item:active{
+    color: #677081 !important;
+    background-color: transparent !important;
+}
+
+.nav__profile__user .dropdown-item.dropRed {
+    color: #FF7373 !important;
+}
+
+.nav-bar_icon__notification{
+    position: relative;
+    z-index: 1;
+}
+
+.nav-bar_icon__notification .icon__item{
+    position: absolute;
+    z-index: 2;
+}
+
+nav a{
+    text-decoration: none;
+}

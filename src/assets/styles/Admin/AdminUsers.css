@@ -1,0 +1,51 @@
+.usersAdmin__body{
+    box-shadow: 0 0 7px #00000030;
+    padding: 28px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    background-color: var(--secondaryS);
+}
+
+.usersAdmin__body table thead{
+    background-color: rgba(30, 100, 143, 0.155);
+    color: var(--primary);
+}
+
+.usersAdmin__body .usersAdmin__btn-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .usersAdmin__body .usersAdmin__btn-top{
+        flex-direction: column;
+        align-items: self-start;
+        align-items: center;
+    }
+}
+
+/*MODAL DE CREAR USUARIO*/
+
+#user_create input{
+    margin: 0;
+}
+
+@media (max-width: 575px) {
+    #user_create .modal__inputs__group{
+        gap: 0;
+    }
+}
+
+#user_edit .modal__inputs__group input{
+    margin-bottom: 0 !important;
+}
+
+#user__detail table td, #user__detail table th{
+    padding: 7px;
+    border-width: 1px
+}

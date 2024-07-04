@@ -1,0 +1,37 @@
+.claim__panel{
+    padding: 35px 14px !important;
+}
+
+.claim__panel .table__claim{
+    box-shadow: 0 0 7px #00000030;
+    padding: 28px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    background-color: var(--secondaryS);
+}
+
+.claim__panel .table__claim .table__claim__button__header{
+    display: flex;
+    justify-content: end;
+}
+
+.claim__panel thead {
+    background-color: rgba(30, 100, 143, 0.155);
+    color: var(--primary);
+}
+
+.claim__panel table.dataTable{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    overflow: hidden;
+}
+
+.claim__panel .dataTables_wrapper .dataTables_filter{
+    padding-bottom: 14px;
+}

@@ -1,0 +1,109 @@
+.pay__completed__content{
+    padding: 0 14px;
+}
+
+.pay__completed__body{
+    display: grid;
+    grid-template-columns: 2fr auto;
+    gap: 14px;
+}
+
+@media (max-width: 991px) {
+    .pay__completed__body{
+        grid-template-columns: 1fr;
+    }
+}
+
+.pay__completed__top__content img{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.pay__completed__list ul li{
+    padding: 12px 6px;
+    border-bottom: 1px solid #00000030;
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.pay__completed__list ul li span:nth-child(1){
+    flex: 1 0 50%;
+}
+
+.pay__completed__list ul li span:nth-child(2){
+    line-break: anywhere;
+}
+
+.pay__completed__right{
+    box-shadow: 0 0 7px #00000030;
+    padding: 28px;
+    border-radius: 14px;
+    height: fit-content;
+    background-color: var(--secondaryS);
+}
+
+.pay__completed__right img{
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    margin-bottom: 14px;
+    max-width: 300px;
+    width: 100%;
+    object-fit: contain
+}
+
+.pay__completed__right button{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.pay__completed__right button svg{
+    stroke: #fff;
+}
+
+.pay__completed__right button:hover svg{
+    stroke: var(--primary);
+}
+
+.payment-response{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/icons/combination-colors.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: var();
+}
+
+.payment-response p {
+    font-size: 3em;
+  }
+  
+  @media (max-width: 575px) {
+    .payment-response p {
+        font-size: 1.7em;
+      }
+  }
+  .color-change span {
+    color: #006491;
+    display: inline-block; /* Para evitar que las letras se apilen verticalmente */
+    margin-right: 4px; /* Espacio entre las letras */
+  }
+  
+  .color-change span:nth-child(2) {
+    color: #41A6D7;
+  }
+  
+  .color-change span:nth-child(3) {
+    color: #34A6C5;
+  }
+  
+  .color-change span:nth-child(4) {
+    color: #41A6D7;
+  }
+

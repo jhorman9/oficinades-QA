@@ -1,0 +1,41 @@
+
+.NavBarTop{
+    background-color: var(--primary);
+}
+
+.NavBarTop figure {
+    margin: 0;
+    max-width: inherit;
+    height: 50px;
+}
+.NavBarTop figure img {
+    height: 100%;
+}
+
+.NavBarTop.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavBarTop .dropdown-toggle.btn.btn-success{
+    background-color: var(--primary) !important;
+    border: none !important;
+}
+
+.NavBarTop .dropdown-toggle.btn.btn-success:hover{
+    background-color: var(--secondaryS) !important;
+    color: #111725 !important;
+}
+
+.NavBarTop .dropdown-menu a:hover{
+    background-color: var(--primary);
+    color: #111725;
+}
+
+.NavBarTop .dropdown-menu a:active{
+    background-color: var(--primary);
+    color: #111725;
+}

@@ -1,0 +1,92 @@
+.profile .profile__title{
+    color: #010101;
+    font-weight: bold;
+}
+
+.profile .profile__content .profile__btn__cancel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 575px) {
+    .profile .profile__content .profile__btn__cancel{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+}
+
+.profile .profile__content .form__content{
+    display: flex;
+    width: 100%;
+    gap: 14px;
+}
+
+@media(max-width:991px){
+    .profile .profile__content .form__content{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.profile .profile__content form input, .profile .profile__content form select{
+    width: 100%;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin-bottom: 7px;
+    outline: none;
+    height: 40px;
+    padding: 0 14px;
+}
+
+.profile .profile__content form .form__data{
+    width: 100%;
+}
+
+.form__password.customer-profile{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.customer-profile.form__password{
+    width: 100%;
+    margin-top: 7px;
+}
+
+.profile .profile__content form .input__group{
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+@media(max-width:575px){
+    .profile .profile__content form .input__group{
+        flex-direction: column;
+    }
+}
+
+.profile .profile__content form .input__group .input__group__item{
+    width: 100%;
+}
+
+.profile label{
+    display: block;
+}
+
+.profile .terms .accept{
+    gap: 10px;
+}
+
+.profile .terms .notification{
+    gap: 10px;
+    margin-bottom: 7px;
+}
+
+.profile .profile__btn__save{
+    display: flex;
+    justify-content: flex-end;
+}
