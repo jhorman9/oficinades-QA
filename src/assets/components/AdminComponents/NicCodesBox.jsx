@@ -35,8 +35,8 @@ const NicCodesBox = ({ nic, setIsRefresh }) => {
           icon: "question",
           iconColor: 'var(--primary)',
           showCancelButton: true,
-          confirmButtonColor: "#d33",
           cancelButtonColor: "var(--primary)",
+          confirmButtonColor: "#d33",
           confirmButtonText: "Eliminar",
           cancelButtonText: 'Cancelar'
         }).then((result) => {

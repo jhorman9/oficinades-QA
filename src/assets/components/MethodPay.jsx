@@ -14,7 +14,7 @@ function MethodPay() {
       $(document).ready(function(){
         $.ajax({
           type: "GET",
-          url: "http://oficinades.idaan.gob.pa:5001/api/payment/GetPaymentsApiKey",
+          url: "http://oficinaqas.idaan.gob.pa:5001/api/payment/GetPaymentsApiKey",
           headers: {
             "Authorization": "Bearer " + localStorage.getItem('token')
           },
@@ -62,7 +62,7 @@ function MethodPay() {
 
           $.ajax({
             type: "POST",
-            url: "http://oficinades.idaan.gob.pa:5001/api/card/AddCardOption",
+            url: "http://oficinaqas.idaan.gob.pa:5001/api/card/AddCardOption",
             data: JSON.stringify({
               CardOption: {
                 CardName: cardholderName,

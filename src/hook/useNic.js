@@ -121,12 +121,15 @@ const useNic = () => {
           setIsRefresh(true);
           Swal.fire({
             icon: 'success',
-            title: 'Notificacion eliminada',
-            text: 'La notificacion ha sido eliminada con éxito',
+            title: 'NIC eliminado',
+            text: `El nic ${nic} ha sido eliminado exitosamente`,
             timer: 2000,
             timerProgressBar: true,
             showConfirmButton: false,
           });
+          setTimeout(() => {
+            window.location.reload();
+          }, 2001);
         })
         .catch((err) => {
           rol == 'Customer' && (

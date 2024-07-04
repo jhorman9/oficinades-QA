@@ -62,8 +62,8 @@ const UserDetailModal = ({data, show, handleClose, nicById, setIsRefresh}) => {
             icon: "question",
             iconColor: 'var(--primary)',
             showCancelButton: true,
-            confirmButtonColor: "var(--primary)",
-            cancelButtonColor: "#d33",
+            cancelButtonColor: "var(--primary)",
+            confirmButtonColor: "#d33",
             confirmButtonText: "Rechazar",
             cancelButtonText: 'Cancelar'
           }).then((result) => {
