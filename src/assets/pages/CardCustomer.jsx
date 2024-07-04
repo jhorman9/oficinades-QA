@@ -28,9 +28,9 @@ const CardCustomer = () => {
       icon: "question",
       iconColor: 'var(--primary)',
       showCancelButton: true,
-      cancelButtonColor: "var(--primary)",
       confirmButtonColor: "#d33",
       cancelButtonText: 'Cancelar',
+      cancelButtonColor: "var(--primary)",
       confirmButtonText: "Eliminar"
     }).then((result) => {
       if (result.isConfirmed) {

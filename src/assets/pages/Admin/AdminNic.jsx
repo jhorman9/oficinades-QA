@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import { format, isValid, parseISO } from 'date-fns';
@@ -65,12 +65,12 @@ const AdminNic = () => {
     const deleteNIC = (nic) => {
       Swal.fire({
         title: "Eliminar NIC",
-        html: `<p>Estás eliminando el NIC <span style="color: var(--primary);">${nic}</span>, de forma permanente. <br /> <br /> <span class='fw-bold color-primary'>¿Deseas continuar?</span></p>`,
+        html: `<p>Estás eliminando el NIC <span style="color: var(--primary);">${nic}</span>, de forma permanente. <br /> <br /> <span class='fw-bold color-primary'>¿Desea continuar?</span></p>`,
         icon: "question",
         iconColor: 'var(--primary)',
         showCancelButton: true,
-        cancelButtonColor: "var(--primary)",
         confirmButtonColor: "#d33",
+        cancelButtonColor: "var(--primary)",
         confirmButtonText: "Eliminar",
         cancelButtonText: 'Cancelar'
       }).then((result) => {

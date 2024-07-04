@@ -35,6 +35,7 @@ const Profile = () => {
                 icon: 'error',
                 title: 'Oops...',
                 text: 'Las contraseñas no coinciden',
+                confirmButtonColor: 'var(--primary)',
             })
         }
     };
@@ -46,10 +47,10 @@ const Profile = () => {
             icon: "question",
             iconColor: 'var(--primary)',
             showCancelButton: true,
-            cancelButtonColor: "var(--primary)",
-            confirmButtonColor: "#d33",
             cancelButtonText: 'Cancelar',
-            confirmButtonText: "Eliminar"
+            confirmButtonText: "Eliminar",
+            confirmButtonColor: '#d33',
+            cancelButtonColor: 'var(--primary)',
           }).then((result) => {
             if (result.isConfirmed) {
               DeleteByProfileUser(navigate);

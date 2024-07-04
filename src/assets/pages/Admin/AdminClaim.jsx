@@ -38,6 +38,7 @@ const AdminClaim = () => {
         icon: 'error',
         title: 'Selecciona una opción',
         text: 'Debes seleccionar una opción en el filtrado de busqueda',
+        confirmButtonColor: 'var(--primary)',
       })
     }
     setSearchState(data);

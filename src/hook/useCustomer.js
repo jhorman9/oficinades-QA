@@ -53,6 +53,7 @@ const useCustomer = () => {
                 icon: 'error',
                 title: 'Error',
                 text: err.res?.data.message || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
         })
     };
@@ -71,6 +72,7 @@ const useCustomer = () => {
                 icon: 'error',
                 title: 'Error',
                 text: err.response?.data.message || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
         })
     };

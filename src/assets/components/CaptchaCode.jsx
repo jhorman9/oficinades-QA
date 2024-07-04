@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import ReCAPTCHA from "react-google-recaptcha";
-import { createRef } from 'react';
 import '../styles/ReCAPTCHA.css';
-import Swal from 'sweetalert2';
 
 const CaptchaCode = ( ) => {
 

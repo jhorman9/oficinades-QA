@@ -27,6 +27,7 @@ const useCertificate = () => {
                     icon: 'error',
                     title: 'Error',
                     text: 'Algo salió mal',
+                    confirmButtonColor: 'var(--primary)',
                 });
                 rol == 'Customer' && (
                     deleteCredentials()
@@ -93,6 +94,7 @@ const useCertificate = () => {
                 icon: 'error',
                 title: 'Error',
                 text: 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
             });
             rol == 'Customer' && (
                 deleteCredentials()
@@ -112,6 +114,7 @@ const useCertificate = () => {
                 icon: 'error',
                 title: 'Error',
                 text: error.response?.data.message || error.response?.data || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
             });
             rol == 'Customer' && (
                 deleteCredentials()

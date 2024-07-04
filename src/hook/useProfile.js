@@ -24,6 +24,7 @@ const useProfile = () => {
                 icon: 'success',
                 title: 'Datos cambiados',
                 text: 'Los datos han sido cambiados exitosamente',
+                confirmButtonColor: 'var(--primary)',
               });
             abreviattedName(data.DocumentName);
             localStorage.setItem('name', data.DocumentName);
@@ -34,12 +35,14 @@ const useProfile = () => {
                     icon: 'error',
                     title: 'Correo ya registrado',
                     text: 'Se ha detectado que ya existe una cuenta asociada a este correo electrónico. Por favor, proporcione un correo electrónico diferente',
+                    confirmButtonColor: 'var(--primary)',
                   });
             }else{
                 Swal.fire({
                 icon: 'error',
                 title: 'Error',
                 text: 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
               rol == 'Customer' && (
                 deleteCredentials()
@@ -57,6 +60,7 @@ const useProfile = () => {
                 icon: 'success',
                 title: 'Datos cambiados',
                 text: 'Los datos han sido cambiados exitosamente',
+                confirmButtonColor: 'var(--primary)',
               });
             abreviattedName(data.Name);
             localStorage.setItem('name', data.Name);
@@ -66,6 +70,7 @@ const useProfile = () => {
                 icon: 'error',
                 title: 'Error',
                 text: 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
               rol == 'Customer' && (
                 deleteCredentials()
@@ -85,6 +90,7 @@ const useProfile = () => {
                 icon: 'error',
                 title: 'Error',
                 text: 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
         })
         .finally(setIsLoading(false))
@@ -101,6 +107,7 @@ const useProfile = () => {
                 icon: 'error',
                 title: 'Error',
                 text: 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
         })
         .finally(setIsLoading(false))
@@ -114,6 +121,7 @@ const useProfile = () => {
                 icon: 'success',
                 title: 'Usuario eliminado',
                 text: 'Usuario eliminado exitosamente',
+                confirmButtonColor: 'var(--primary)',
               });
             localStorage.clear();
             navigate('/');
@@ -123,6 +131,7 @@ const useProfile = () => {
                 icon: 'error',
                 title: 'Error',
                 text: err.response?.data.message || err.response?.data || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
         })
         .finally(setIsLoading(false))

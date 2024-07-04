@@ -27,7 +27,7 @@ const ResetPassword = () => {
     const submit = (data) => {
         data.NewPassword === data.password2 ? 
         resetPasswordHook(data, navigate, reset, email, token, isToken ):
-        Swal.fire({ icon: 'error', title: 'Oops...',text: 'Las contraseñas no coinciden' })
+        Swal.fire({ icon: 'error', title: 'Oops...',text: 'Las contraseñas no coinciden', confirmButtonColor: 'var(--primary)'})
     };
 
   return (

@@ -37,6 +37,7 @@ const AdminProfile = () => {
                 icon: 'error',
                 title: 'Oops...',
                 text: 'Las contraseñas no coinciden',
+                confirmButtonColor: 'var(--primary)',
             })
         }
     }

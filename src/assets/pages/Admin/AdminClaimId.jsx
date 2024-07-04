@@ -27,6 +27,8 @@ const AdminClaimId = () => {
     }
   }, []);
 
+  console.log(getComplaintByID);
+
   return (
     <section className='claim__panel__chat container'>
       <div className="claim__panel__chat__container">

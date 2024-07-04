@@ -8,6 +8,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import SVGDenied from '../images/icons/SVGDenied';
 import SVGPending from '../images/icons/SVGPending';
 import { useReactToPrint } from 'react-to-print';
+import LOGOIDAAN from '../images/bg-idaan-bill-2.png';
 
 const PayCompletedPanel = () => {
 
@@ -62,6 +63,17 @@ const PayCompletedPanel = () => {
         borderLeft: `10px solid ${statusPays[dataPayment?.status]}`
     };
 
+    const styleImage = {
+        position: 'absolute',
+        top: '0',
+        width: '100%',
+        height: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        zIndex: '1'
+    }
+
     const textToTranslate = {
         'Approved': 'Su pago fue aprobado exitosamente',
         'Decline - Contact your Bank':'Declinado, contacte a su banco',
@@ -85,8 +97,8 @@ const PayCompletedPanel = () => {
                             <p className='mb-0'>{dataPayment && textToTranslate[dataPayment.message]}</p>
                         </div>
                     </div>
-                    <div className="pay__completed__list" style={{width:'100%'}}>
-                        <ul className='list-unstyled'>
+                    <div className="pay__completed__list position-relative" style={{width:'100%'}}>
+                        <ul className='list-unstyled' style={{zIndex: '2', position: 'relative'}}>
                             <li>
                                 <span>Número de autorización:</span>
                                 <span>{dataPayment && dataPayment.autorizathion}</span>
@@ -116,6 +128,9 @@ const PayCompletedPanel = () => {
                                 <strong>${dataPayment && dataPayment.status == 'REJECTED' ? 0 : dataPayment?.amount}</strong>
                             </li>
                         </ul>
+                        <div className='pay__completed__logo' style={styleImage}>
+                            <img src={LOGOIDAAN} alt="" style={{mixBlendMode: 'darken'}}/>
+                        </div>
                     </div>
                 </div>
                 <div className="pay__completed__right">

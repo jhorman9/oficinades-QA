@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import '../../styles/Admin/dashboard.css';
 import userRegisterPNG from '../../images/dashboard/Dashboard de pagos iconos-03.png';
 import paymentReceivedPNG from '../../images/dashboard/Dashboard de pagos iconos-04.png';
 import debtfreePNG from '../../images/dashboard/Dashboard de pagos iconos-07.png';
@@ -8,6 +7,7 @@ import claimReceivedPNG from '../../images/dashboard/Dashboard de pagos iconos-0
 import nicPNG from '../../images/dashboard/Dashboard de pagos iconos-10.png';
 import useDashboard from '../../../hook/useDashboard';
 import { useForm } from 'react-hook-form';
+import '../../styles/Admin/dashboard.css';
 
 const AdminHome = () => {
 

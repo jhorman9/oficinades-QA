@@ -1,7 +1,7 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import useNotifications from '../../../hook/useNotifications';
 import { format, isValid, parseISO } from 'date-fns';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Button, Form, Modal } from 'react-bootstrap';
 import { Controller, useForm } from 'react-hook-form';
 import { v4 as uuidv4 } from 'uuid';
@@ -25,7 +25,6 @@ import editarSVG from '../../images/icons/editar.svg';
 import papeleraSVG from '../../images/icons/papelera-xmark.svg';
 import { useDropzone } from 'react-dropzone';
 import Swal from 'sweetalert2';
-import SVGActivateNotification from '../../images/icons/SVGActivateNotification';
 import { useSelector } from 'react-redux';
 import PaginateComponent from '../../components/PaginateComponent';
 import GeneratorCSV from '../../components/GeneratorCSV';
@@ -281,6 +280,7 @@ const AdminNotification = () => {
         icon: 'error',
         title: 'Selecciona una opción',
         text: 'Debes seleccionar una opción en el filtrado de busqueda',
+        confirmButtonColor: 'var(--primary)',
       })
     }
     setSearchState(data);

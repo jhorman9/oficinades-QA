@@ -70,8 +70,11 @@ const DebtFreePanel = () => {
     Swal.fire({
       title: 'Estas segur(a)/o?',
       text: 'El costo correspondiente a la solicitud de un paz y salvo es de B/1. el mismo será cobrado en la factura del servicio.',
-      showDenyButton: true,
+      showCancelButton: true,
       confirmButtonText: 'Si, estoy segur(a)/o',
+      confirmButtonColor: 'var(--primary)',
+      cancelButtonText: 'Cancelar',
+      cancelButtonColor: '#d33',
     }).then((result) => {
       if (result.isConfirmed) {
         data.NicCode = nic;
@@ -98,8 +101,8 @@ const DebtFreePanel = () => {
       showCancelButton: true,
       confirmButtonText: 'Eliminar',
       cancelButtonColor: "var(--primary)",
-      confirmButtonColor: "#d33",
       cancelButtonText: 'Cancelar',
+      confirmButtonColor: "#d33",
     }).then((result) => {
       if (result.isConfirmed) {
         DeleteCertificate(nic,id)
@@ -220,6 +223,10 @@ const DebtFreePanel = () => {
                     <label className='is-required'>Cantidad de paz y salvo</label>
                     <input {...register('Quantity', {
                       required: 'Este campo no debe estar vacio', 
+                      min: {
+                        value: 1,
+                        message: 'La cantidad mínima es de 1 certificado'
+                      },
                       max: {
                        value: 50,
                        message: 'La cantidad maxima es de 50 certificados' 

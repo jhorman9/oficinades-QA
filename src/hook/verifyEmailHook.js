@@ -19,6 +19,7 @@ const verifyEmailHook = () => {
                 Swal.fire({
                     icon: 'success',
                     title: 'Correo verificado exitosamente',
+                    confirmButtonColor: 'var(--primary)',
                 });
                 navigate('/');
                 setIsVerified(true);    
@@ -27,6 +28,7 @@ const verifyEmailHook = () => {
                 Swal.fire({
                     icon: 'error',
                     title: err.response?.data.message || 'Algo salio mal',
+                    confirmButtonColor: 'var(--primary)',
                 });
                 setIsVerified(false);
             })
@@ -44,12 +46,14 @@ const verifyEmailHook = () => {
                 icon: 'success',
                 title: 'Correo enviado',
                 text: 'Hemos enviado un correo de confirmacion de su direccion de correo electronico, por favor verifique en su bandeja y siga los paso indicado en el mismo',
+                confirmButtonColor: 'var(--primary)',
             });
         })
         .catch((err) => {
             Swal.fire({
                 icon: 'error',
                 title: 'Token expirado',
+                confirmButtonColor: 'var(--primary)',
                 });
         })
         .finally(() => {

@@ -7,7 +7,6 @@ import asepPNG from '../images/asep.png';
 import useComplaints from '../../hook/useComplaints';
 import useNic from '../../hook/useNic';
 import { useForm } from 'react-hook-form';
-import Swal from 'sweetalert2';
 
 const MakeClaimPanel = () => {
 

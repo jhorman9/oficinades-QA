@@ -26,11 +26,11 @@ const CardNic = ({ closedSvg, info, moneySvg, handleNicDelete }) => {
                 <h4 className='mb-0'>NIC: {info.nicCode}</h4>
             </div> 
             <div className="text__group">
-                <p className='mb-0 text__principal'>Mes corriente:</p>
+                <p className='mb-0 text__principal'>Mes corriente agua:</p>
                 <p className='mb-0 fw-bold'>{info.currentBalance}</p>
             </div>
             <div className="text__group">
-                <p className='mb-0 text__principal'>Total: </p>
+                <p className='mb-0 text__principal'>Total agua: </p>
                 <p className='mb-0 fw-bold'>{info.totalBalance}</p>
             </div>
         </div>

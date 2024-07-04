@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { setIsLoading } from '../store/slice/isLoading.slice';
 import { useDispatch } from 'react-redux';
 import getConfig from '../assets/components/utils/getConfig';
 import axios from 'axios';

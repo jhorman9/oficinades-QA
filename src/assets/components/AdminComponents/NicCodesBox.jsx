@@ -31,12 +31,12 @@ const NicCodesBox = ({ nic, setIsRefresh }) => {
     const deleteNIC = (nic) => {
         Swal.fire({
           title: "Eliminar NIC",
-          html: `<p>Estás eliminando el NIC <span style="color: var(--primary);">${nic}</span>, de forma permanente. <br /> <br /> <span class='fw-bold color-primary'>¿Deseas continuar?</span></p>`,
+          html: `<p>Estás eliminando el NIC <span style="color: var(--primary);">${nic}</span>, de forma permanente. <br /> <br /> <span class='fw-bold color-primary'>¿Desea continuar?</span></p>`,
           icon: "question",
           iconColor: 'var(--primary)',
           showCancelButton: true,
-          cancelButtonColor: "var(--primary)",
           confirmButtonColor: "#d33",
+          cancelButtonColor: "var(--primary)",
           confirmButtonText: "Eliminar",
           cancelButtonText: 'Cancelar'
         }).then((result) => {

@@ -5,7 +5,7 @@ import useFormattedDate from '../../components/useFormattedDate';
 import useCustomer from '../../../hook/useCustomer';
 import '../../styles/Admin/AdminCustomer.css';
 import Swal from 'sweetalert2';
-import NicCodesBox from '../../components/AdminComponents/nicCodesBox';
+import NicCodesBox from '../../components/AdminComponents/NicCodesBox';
 
 const AdminCustomerId = () => {
 
@@ -35,13 +35,13 @@ const AdminCustomerId = () => {
   const handleDeleteUser = (user) => {
     Swal.fire({
       title: "Eliminar cliente",
-      html: `<p>Deseas eliminar al usuario <span style="color: var(--primary);">${user.name}</span>? <br /> <br /> <span class='fw-bold color-primary'>¿Deseas continuar?</span></p>`,
+      html: `<p>Desea eliminar al usuario <span style="color: var(--primary);">${user.name}</span>? <br /> <br /> <span class='fw-bold color-primary'>¿Desea continuar?</span></p>`,
       icon: "question",
       iconColor: 'var(--primary)',
       showCancelButton: true,
+      confirmButtonColor: "#d33",
       cancelButtonText:'Cancelar',
       cancelButtonColor: "var(--primary)",
-      confirmButtonColor: "#d33",
       confirmButtonText: "Eliminar"
     }).then((result) => {
       if (result.isConfirmed) {

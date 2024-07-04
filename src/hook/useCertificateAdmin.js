@@ -4,7 +4,6 @@ import { useDispatch } from "react-redux";
 import { setIsLoading } from "../store/slice/isLoading.slice";
 import { useState } from "react";
 import Swal from "sweetalert2";
-import generateCertificated from "../assets/components/utils/generateCertificated";
 
 const useCertificateAdmin = () => {
 
@@ -27,6 +26,7 @@ const useCertificateAdmin = () => {
                     icon: 'error',
                     title: 'Error',
                     text: error.response?.data.message || error.response?.data || 'Algo salió mal',
+                    confirmButtonColor: 'var(--primary)',
                 });
             })
         };
@@ -56,6 +56,7 @@ const useCertificateAdmin = () => {
                 icon: 'error',
                 title: 'Error',
                 text: error.response?.data.message || error.response?.data || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
             dispatch(setIsLoading(false));
         })

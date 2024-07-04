@@ -54,6 +54,7 @@ const useUsers = () => {
                 icon: 'error',
                 title: 'Error',
                 text: err.response?.data.message || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
 
               if(err.response?.status === 401){
@@ -87,6 +88,7 @@ const useUsers = () => {
                 icon: 'error',
                 title: 'Error',
                 text: err.response?.data.message || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
         })
     };
@@ -113,6 +115,7 @@ const useUsers = () => {
                 icon: 'error',
                 title: 'Error',
                 text: err.response?.data.message || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
         })
     };
@@ -131,6 +134,7 @@ const useUsers = () => {
                 icon: 'error',
                 title: 'Error',
                 text: err.response?.data.message || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
         })
     };

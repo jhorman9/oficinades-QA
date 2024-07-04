@@ -25,6 +25,7 @@ const useComplaints = () => {
             icon: 'error',
             title: 'Error',
             text: 'Algo salió mal',
+            confirmButtonColor: 'var(--primary)',
           });
           rol == 'Customer' && (
             deleteCredentials()
@@ -42,6 +43,7 @@ const useComplaints = () => {
             icon: 'success',
             title: 'Creado con éxito',
             text: 'Su reclamo ha sido creado con éxito',
+            confirmButtonColor: 'var(--primary)',
           });
           dispatch(setIsLoading(false));
           reset();
@@ -51,12 +53,14 @@ const useComplaints = () => {
             icon: 'error',
             title: 'Error',
             text: 'Algo salió mal',
+            confirmButtonColor: 'var(--primary)',
           });
         if(error.response?.data.message == "CLIENTE TIENE ATENCIONES PENDIENTES POR EL MISMO MOTIVO"){
           Swal.fire({
             icon: 'error',
             title: 'Error',
             text: 'USTED YA TIENE ATENCIONES PENDIENTES POR EL MISMO MOTIVO',
+            confirmButtonColor: 'var(--primary)',
           });
         }
         dispatch(setIsLoading(false));
@@ -75,6 +79,7 @@ const useComplaints = () => {
             icon: 'error',
             title: 'Error',
             text: 'Algo salió mal',
+            confirmButtonColor: 'var(--primary)',
           });
         dispatch(setIsLoading(false));
         rol == 'Customer' && (
@@ -95,6 +100,7 @@ const useComplaints = () => {
             icon: 'error',
             title: 'Error',
             text: 'Algo salió mal',
+            confirmButtonColor: 'var(--primary)',
           });
           dispatch(setIsLoading(false));
           rol == 'Customer' && (

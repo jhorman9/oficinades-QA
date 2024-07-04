@@ -22,6 +22,7 @@ const useAuth = () => {
                 icon: 'success',
                 title: 'Registro existoso',
                 text: 'Su registro se ha completado con éxito. En breve, recibirá un correo con un enlace de confirmación. Por favor, haga clic en el enlace para verificar y confirmar su cuenta.',
+                confirmButtonColor: 'var(--primary)',
               });
             })
             .catch((error) => {
@@ -30,12 +31,14 @@ const useAuth = () => {
                   icon: 'error',
                   title: 'Oops...',
                   text: 'Ya hay una cuenta registrada con este correo electronico',
+                  confirmButtonColor: 'var(--primary)',
                 });
               }else if(error.response?.data.message.includes('ya fue registrado previamente para otro usuario, validar')){
                 Swal.fire({
                   icon: 'error',
                   title: 'Contrato NIC no disponible',
                   text: 'El contrato NIC que ha proporcionado ya ha sido registrado para otro usuario',
+                  confirmButtonColor: 'var(--primary)',
                 });
               }
               else{
@@ -43,6 +46,7 @@ const useAuth = () => {
                   icon: 'error',
                   title: 'Oops...',
                   text: 'Algo salió mal',
+                  confirmButtonColor: 'var(--primary)',
                 });
               }
             })
@@ -54,6 +58,7 @@ const useAuth = () => {
             icon: 'error',
             title: 'Oops...',
             text: 'Falta completar el reCAPTCHA',
+            confirmButtonColor: 'var(--primary)',
           });
           dispatch(setIsLoading(false));
         }
@@ -83,14 +88,17 @@ const useAuth = () => {
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Credenciales incorrectas',
+                    confirmButtonColor: 'var(--primary)',
                   })
             }else if(error.response?.data?.message == 'El correo electrónico no ha sido confirmado') {
               Swal.fire({
                 title: 'Correo no confirmado',
                 text: 'Su correo electrónico no ha sido confirmado desea enviar la confirmación?',
-                showDenyButton: true,
                 showCancelButton: true,
                 confirmButtonText: 'Obtener Confirmación',
+                confirmButtonColor: 'var(--primary)',
+                cancelButtonText: 'Cancelar',
+                cancelButtonColor: '#d33'
               }).then((result) => {
                 if (result.isConfirmed) {
                   resendEmail(data.email);
@@ -101,6 +109,7 @@ const useAuth = () => {
                 icon: 'error',
                 title: 'Oops...',
                 text: 'Email y/o contraseña inválidos',
+                confirmButtonColor: 'var(--primary)',
             })
             }else if(error.response?.data?.message.includes('Por su seguridad hemos enviado un correo a su dirección')){
               Swal.fire({
@@ -108,6 +117,7 @@ const useAuth = () => {
                 iconColor: '#006491',
                 title: 'Hemos enviado un correo',
                 text: 'Por su seguridad hemos enviado un correo a su correo electronico para su confirmación',
+                confirmButtonColor: 'var(--primary)',
             })
             }else{
               deleteCredentials();
@@ -115,6 +125,7 @@ const useAuth = () => {
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Algo salió mal',
+                    confirmButtonColor: 'var(--primary)',
                 })
             }
         })

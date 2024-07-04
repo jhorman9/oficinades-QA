@@ -97,6 +97,7 @@ const PayPanel = () => {
            icon: 'error',
            title: 'Oops...',
            text: 'Falta completar el reCAPTCHA',
+           confirmButtonColor: 'var(--primary)',
          });
        }
     }else{
@@ -104,6 +105,7 @@ const PayPanel = () => {
         icon: 'error',
         title: 'Seleccionar el monto a pagar',
         text: 'Si su monto total es posterior a 0 el sistema no le permitirá realizar su pago',
+        confirmButtonColor: 'var(--primary)',
       });
     }
 
@@ -301,7 +303,7 @@ const PayPanel = () => {
                         }
                       }
                     })} type="checkbox" className='cursor-pointer'/>
-                    <p className='mb-0'>He leido y acepto los <Link to='/terms-service'>Términos y condiciones</Link> de este servicio</p>
+                    <p className='mb-0'>He leido y acepto los <Link to='https://www.idaan.gob.pa/appcliente/t%C3%A9rminos-de-aceptaci%C3%B3n' target='_blank'>Términos y condiciones</Link> de este servicio</p>
                   </div>
                   <small className='text-form' style={{color: 'red'}}>{errors.isRead?.message}</small>
                 </div>

@@ -30,6 +30,7 @@ const useNic = () => {
           icon: 'error',
           title: 'Error',
           text: 'Algo salió mal',
+          confirmButtonColor: 'var(--primary)',
         });
       })
   };
@@ -48,6 +49,7 @@ const useNic = () => {
             icon: 'error',
             title: 'Error',
             text: 'Algo salió mal',
+            confirmButtonColor: 'var(--primary)',
           });
           rol == 'Customer' && (
             deleteCredentials()
@@ -68,6 +70,7 @@ const useNic = () => {
                 icon: 'error',
                 title: 'Error',
                 text: 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
               rol == 'Customer' && (
                 deleteCredentials()
@@ -83,6 +86,7 @@ const useNic = () => {
           icon: 'success',
           title: 'NIC creado',
           text: 'Ahora solo falta ser aprobado por el IDAAN',
+          confirmButtonColor: 'var(--primary)',
         });
         reset();
         dispatch(setIsLoading(false));
@@ -94,12 +98,14 @@ const useNic = () => {
           icon: 'error',
           title: 'Error',
           text: 'Algo salió mal',
+          confirmButtonColor: 'var(--primary)',
         });
         if(error.response?.data.message.includes('El contrato NIC')){
           Swal.fire({
             icon: 'error',
             title: 'Error',
             text: `El contrato NIC ${ContractByCustomer?.NicCode} ya fue registrado previamente para otro usuario, validar!`,
+            confirmButtonColor: 'var(--primary)',
           });
         }
       })
@@ -122,9 +128,6 @@ const useNic = () => {
             showConfirmButton: false,
           });
         })
-        setTimeout(() => {
-          window.location.reload();
-        }, 2001)
         .catch((err) => {
           rol == 'Customer' && (
             deleteCredentials()
@@ -134,6 +137,7 @@ const useNic = () => {
             icon: 'error',
             title: 'Error',
             text: 'Algo salió mal',
+            confirmButtonColor: 'var(--primary)',
           });
         })
     };

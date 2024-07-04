@@ -37,14 +37,15 @@ const AdminCustomer = () => {
     Swal.fire({
       title: `Listado de NIC ${user.name}`,
       html: `<ul>${user.contracts?.map(contract => `<li class='color-primary' key=${contract}>${contract}</li>`).join('')}</ul>`,
-      icon: "info"
+      icon: "info",
+      confirmButtonColor: 'var(--primary)',
     });
   };
 
   const handleDeleteUser = (user) => {
     Swal.fire({
       title: "Eliminar cliente",
-      html: `<p>Deseas eliminar al usuario <span style="color: var(--primary);">${user.name}</span>, <br />con el <span style="color: var(--primary);">ID: ${user.customerId}</span>? <br /> <br /> <span class='fw-bold color-primary'>¿Deseas continuar?</span></p>`,
+      html: `<p>Desea eliminar al usuario <span style="color: var(--primary);">${user.name}</span>, <br />con el <span style="color: var(--primary);">ID: ${user.customerId}</span>? <br /> <br /> <span class='fw-bold color-primary'>¿Desea continuar?</span></p>`,
       icon: "question",
       iconColor: 'var(--primary)',
       showCancelButton: true,
@@ -69,6 +70,7 @@ const AdminCustomer = () => {
         icon: 'error',
         title: 'Selecciona una opción',
         text: 'Debes seleccionar una opción en el filtrado de busqueda',
+        confirmButtonColor: 'var(--primary)',
       })
     }
     setSearchState(data);

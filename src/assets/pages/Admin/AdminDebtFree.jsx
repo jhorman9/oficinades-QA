@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form';
-import { format, isValid, parseISO } from 'date-fns';
 import useProvince from '../../../hook/useProvince';
 import useCertificateAdmin from '../../../hook/useCertificateAdmin';
 import '../../styles/Admin/AdminDebtFree.css';
@@ -118,6 +117,7 @@ export const AdminDebtFree = () => {
       icon: 'info',
       html: `<ul>${id?.map(i => `<li class='color-primary' key=${i}>${i}</li>`).join('')}</ul>`,
       title: 'Detalle del código de certificado',
+      confirmButtonColor: 'var(--primary)',
     });
   }
   

@@ -30,6 +30,7 @@ export const Register = ( {props} ) => {
                 icon: 'error',
                 title: 'Oops...',
                 text: 'Las contraseñas no coinciden',
+                confirmButtonColor: 'var(--primary)',
             })
         }
     };
@@ -55,7 +56,7 @@ export const Register = ( {props} ) => {
                 <div className='form-login_content'>
                     <form className='form-login_input' onSubmit={handleSubmit(submit)} >
                         <div className='form-login_input-text_content'>
-                            <label htmlFor="" className='is-required'>Nombre de la factura</label>
+                            <label htmlFor="" className='is-required'>Nombre del titular en la factura</label>
                             <div className='position-relative'>
                                 <input {...register('Name', { 
                                     required: 'Debes introducir tu factura',
@@ -64,7 +65,7 @@ export const Register = ( {props} ) => {
                                         message: 'Debes introducirlo en formato (Nombre Apellido)'
                                     }
                                      })} className='form-login_input-password' autoComplete='off' type='text' placeholder='Introduce el nombre' />
-                                <p className='small__text'> Nombre del titular en la factura </p>
+                                <p className='small__text'> Nombre que aparece en tu factura </p>
                                 <small className='text-form' style={{color: 'red'}}>{errors.Name?.message}</small>
                                 <div className='position-absolute'>
                                     <i className="fa-solid fa-file-invoice-dollar"></i>
@@ -212,7 +213,7 @@ export const Register = ( {props} ) => {
                         <div className="form__terms-service">
                             <div className="form__terms-service__checkbox">
                                 <input {...register('AcceptTerms', { required: 'Debes aceptar los términos y condiciones' })} type="checkbox" className='mt-0'/>
-                                <span className="form__terms-service__checkbox-text">Acepto los <Link to={'/terms-service'} className='mb-0'>Términos y Condiciones</Link></span><br />
+                                <span className="form__terms-service__checkbox-text">Acepto los <Link to={'https://www.idaan.gob.pa/appcliente/t%C3%A9rminos-de-aceptaci%C3%B3n'} target='_blank' className='mb-0'>Términos y Condiciones</Link></span><br />
                             </div>
                                 <small className='text-form' style={{color: 'red'}}>{errors.AcceptTerms?.message}</small>
                             <div className="form__terms-service__checkbox">

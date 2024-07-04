@@ -1,7 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Form, Modal } from 'react-bootstrap';
-import useProvince from '../../../hook/useProvince';
-import { useSelector } from 'react-redux';
 import Swal from 'sweetalert2';
 import useContractAdmin from '../../../hook/useContractAdmin';
 import { format, parseISO } from 'date-fns';
@@ -36,13 +34,14 @@ const UserDetailModal = ({data, show, handleClose, nicById, setIsRefresh}) => {
     const approvedClient = (nic) => {
         Swal.fire({
             title: "Estás seguro?",
-            html: `<p>Deseas aprobar al NIC <span style="color: var(--primary);">${nic}</span>?</p>`,
+            html: `<p>Desea aprobar al NIC <span style="color: var(--primary);">${nic}</span>?</p>`,
             icon: "question",
             iconColor: 'var(--primary)',
             showCancelButton: true,
             confirmButtonColor: "var(--primary)",
             cancelButtonColor: "#d33",
-            confirmButtonText: "Si, confirmarlo!"
+            confirmButtonText: "Confirmar",
+            cancelButtonText: 'Cancelar'
           }).then((result) => {
             if (result.isConfirmed) {
                 const text = 'Approved'
@@ -59,13 +58,14 @@ const UserDetailModal = ({data, show, handleClose, nicById, setIsRefresh}) => {
         message.length > 3 ? 
         Swal.fire({
             title: "Estás seguro?",
-            html: `<p>Deseas rechazar al NIC <span style="color: var(--primary);">${nic}</span>?</p>`,
+            html: `<p>Desea rechazar al NIC <span style="color: var(--primary);">${nic}</span>?</p>`,
             icon: "question",
             iconColor: 'var(--primary)',
             showCancelButton: true,
-            cancelButtonColor: "var(--primary)",
-            confirmButtonColor: "#d33",
-            confirmButtonText: "Rechazar"
+            confirmButtonColor: "var(--primary)",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Rechazar",
+            cancelButtonText: 'Cancelar'
           }).then((result) => {
             if (result.isConfirmed) {
                 const text = 'Rejected'

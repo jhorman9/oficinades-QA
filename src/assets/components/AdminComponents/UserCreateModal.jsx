@@ -63,6 +63,7 @@ const UserCreateModal = ({show, handleClose, dataTableInstance, setIsRefresh}) =
             icon: 'warning',
             title: 'Estatus del usuario',
             text: 'El estatus inicial del usuario será Activo',
+            confirmButtonColor: 'var(--primary)',
         })
     };
 

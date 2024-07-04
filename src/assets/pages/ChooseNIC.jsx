@@ -27,12 +27,12 @@ const ChooseNIC = () => {
     const handleNicDelete = (nic) => {
         Swal.fire({
             title: "Eliminar NIC",
-            html: `<p>Deseas eliminar el NIC ${nic} de su cuenta?</p>`,
+            html: `<p>Desea eliminar el NIC ${nic} de su cuenta?</p>`,
             icon: "question",
             iconColor: 'var(--primary)',
             showCancelButton: true,
-            cancelButtonColor: "var(--primary)",
             confirmButtonColor: "#d33",
+            cancelButtonColor: "var(--primary)",
             cancelButtonText: 'Cancelar',
             confirmButtonText: "Eliminar"
           }).then((result) => {

@@ -6,7 +6,7 @@ import useUsers from '../../../hook/useUsers';
 import PasswordGenerator from './PasswordGenerator';
 import ReactSelect from 'react-select';
 
-const UserEditModal = ({ idUser, dataTableInstance, show, handleClose, getUser, handleShow }) => {
+const UserEditModal = ({ show, handleClose, getUser, handleShow }) => {
 
     const {register, handleSubmit, reset, formState: { errors }, control, watch, setValue} = useForm();
     const { GetProvinces, provinces } = useProvince();
@@ -180,7 +180,6 @@ const UserEditModal = ({ idUser, dataTableInstance, show, handleClose, getUser, 
                                 isMulti
                                 className="react-select-container"
                                 classNamePrefix="react-select"
-                                filterOption={() => true}
                                 onChange={(selectedOptions) => {
                                     setProvincesValue(selectedOptions);
                                     field.onChange(selectedOptions);

@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import getConfig from '../../assets/components/utils/getConfig';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
 
 export const rolSlice = createSlice({
     name: 'nic',

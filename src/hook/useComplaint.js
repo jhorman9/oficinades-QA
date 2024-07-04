@@ -28,6 +28,7 @@ const useComplaint = () => {
                     icon: 'error',
                     title: 'Error',
                     text: error.response?.data.message || error.response?.data || 'Algo salió mal',
+                    confirmButtonColor: 'var(--primary)',
                 });
             })
         };
@@ -45,6 +46,7 @@ const useComplaint = () => {
                         icon: 'error',
                         title: 'Error',
                         text: error.response?.data.message || error.response?.data || 'Algo salió mal',
+                        confirmButtonColor: 'var(--primary)',
                     });
                 })
             };

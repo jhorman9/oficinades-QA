@@ -25,6 +25,7 @@ const useContractAdmin = () => {
                 icon: 'error',
                 title: 'Error',
                 text: error.response?.data.message || error.response?.data || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
             dispatch(setIsLoading(false));
         })
@@ -55,6 +56,7 @@ const useContractAdmin = () => {
                  icon: 'error',
                  title: 'Error',
                  text: error.response?.data.message || error.response?.data || 'Algo salió mal',
+                 confirmButtonColor: 'var(--primary)',
                });
              dispatch(setIsLoading(false));
          })
@@ -75,6 +77,7 @@ const useContractAdmin = () => {
                 icon: 'error',
                 title: 'Error',
                 text: error.response?.data.message || error.response?.data || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
               // deleteCredentials();
           })
@@ -103,6 +106,7 @@ const useContractAdmin = () => {
                 icon: 'error',
                 title: 'Error',
                 text: error.response?.data.message || error.response?.data || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
               // deleteCredentials();
           })

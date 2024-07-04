@@ -49,7 +49,7 @@ const HomePanel = () => {
           <div className='home__card__water position-relative'>
             <div className='card-body'>
               <div className="card__bottom">
-                <h3 className='mb-0 fw-bold'>B./{balance?.total}</h3>
+                <h3 className='mb-0 fw-bold'>B./{Number.isInteger(Number(balance?.total)) ? `${Number(balance?.total)}.00` : balance?.total}</h3>
                 <p className='mb-0'>Deuda IDAAN hasta la fecha</p>
                 <div className='card__bottom-2'>
                   <div className='card__btn-action'>
@@ -58,7 +58,7 @@ const HomePanel = () => {
                   </div>
                   <div className='home__card__pay-process bg-2'>
                     <p className='mb-0'>Pago por aplicar</p>
-                    <span className='fs-5'>B/{balance?.tempPaymentIdaan}</span>
+                    <span className='fs-5'>B/{Number.isInteger(Number(balance?.tempPaymentIdaan)) ? `${Number(balance?.tempPaymentIdaan)}.00` : balance?.tempPaymentIdaan}</span>
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@ const HomePanel = () => {
           <div className='home__card__water cleanliness position-relative'>
             <div className='card-body'>
               <div className="card__bottom">
-                <h3 className='mb-0 fw-bold'>B./{balance?.totalSanitation}</h3>
+                <h3 className='mb-0 fw-bold'>B./{Number.isInteger(Number(balance?.totalSanitation)) ? `${Number(balance?.totalSanitation)}.00` : balance?.totalSanitation}</h3>
                 <p className='mb-0'>Deuda ASEO hasta la fecha</p>
                 <div className='card__bottom-2'>
                   <div className='card__btn-action'>
@@ -79,7 +79,7 @@ const HomePanel = () => {
                   </div>
                   <div className='home__card__pay-process'>
                     <p className='mb-0'>Pago por aplicar</p>
-                    <span className='fs-5'>B/{balance?.tempPaymentAseo}</span>
+                    <span className='fs-5'>B/{Number.isInteger(Number(balance.tempPaymentAseo)) ? `${Number(balance.tempPaymentAseo)}.00` : balance.tempPaymentAseo}</span>
                   </div>
                 </div>
               </div>

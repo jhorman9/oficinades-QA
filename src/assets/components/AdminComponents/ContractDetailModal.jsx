@@ -1,7 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Form, Modal } from 'react-bootstrap';
-import useProvince from '../../../hook/useProvince';
-import { useSelector } from 'react-redux';
 import Swal from 'sweetalert2';
 import useContractAdmin from '../../../hook/useContractAdmin';
 import '../../styles/Admin/AdminUsers.css';
@@ -30,7 +28,7 @@ const ContractDetailModal = ({setShow, data, show, handleClose, nicById, setIsRe
     const approvedClient = (nic) => {
         Swal.fire({
             title: "Aprobar NIC",
-            html: `<p>Al aprobar el <span style="color: var(--primary);">NIC: ${nic}</span> autorizas al usuario a realizar las gestiones relacionadas al mismo. <br /> <br /> <span class='fw-bold color-primary'>¿Deseas continuar?</span></p>`,
+            html: `<p>Al aprobar el <span style="color: var(--primary);">NIC: ${nic}</span> autorizas al usuario a realizar las gestiones relacionadas al mismo. <br /> <br /> <span class='fw-bold color-primary'>¿Desea continuar?</span></p>`,
             icon: "question",
             iconColor: 'var(--primary)',
             showCancelButton: true,
@@ -54,13 +52,13 @@ const ContractDetailModal = ({setShow, data, show, handleClose, nicById, setIsRe
         message.length > 3 ? 
         Swal.fire({
             title: "Rechazar NIC",
-            html: `<p>Al rechazar el <span style="color: var(--primary);">NIC: ${nic}</span> el usuario no podrá realizar ninguna gestión relacionada al mismo. <br /> <br /> <span class='fw-bold color-primary'>¿Deseas continuar?</span></p>`,
+            html: `<p>Al rechazar el <span style="color: var(--primary);">NIC: ${nic}</span> el usuario no podrá realizar ninguna gestión relacionada al mismo. <br /> <br /> <span class='fw-bold color-primary'>¿Desea continuar?</span></p>`,
             icon: "question",
             iconColor: 'var(--primary)',
             showCancelButton: true,
-            confirmButtonColor: "#d33",
+            confirmButtonColor: "var(--primary)",
+            cancelButtonColor: "#d33",
             confirmButtonText: "Rechazar",
-            cancelButtonColor: "var(--primary)",
             cancelButtonText: 'Cancelar'
           }).then((result) => {
             if (result.isConfirmed) {

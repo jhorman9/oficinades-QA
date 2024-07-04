@@ -63,19 +63,20 @@ const AdminUsers = () => {
     Swal.fire({
       title: `Listado de provincias del usuario ${user.name}`,
       html: `<ul>${user.provinces?.map(province => `<li class='color-primary' key=${province.provinceId}>${province.name}</li>`).join('')}</ul>`,
-      icon: "info"
+      icon: "info",
+      confirmButtonColor: 'var(--primary)',
     });
   };
 
   const handleDeleteUser = (userId) => {
     Swal.fire({
       title: "Eliminar usuario",
-      html: `<p>Estás eliminando al usuario con el <span style="color: var(--primary);">ID ${userId}</span>, de forma permanente. <br /> <br /> <span class='fw-bold color-primary'>¿Deseas continuar?</span></p>`,
+      html: `<p>Estás eliminando al usuario con el <span style="color: var(--primary);">ID ${userId}</span>, de forma permanente. <br /> <br /> <span class='fw-bold color-primary'>¿Desea continuar?</span></p>`,
       icon: "question",
       iconColor: 'var(--primary)',
       showCancelButton: true,
-      cancelButtonColor: "var(--primary)",
       confirmButtonColor: "#d33",
+      cancelButtonColor: "var(--primary)",
       confirmButtonText: "Eliminar",
       cancelButtonText: "Cancelar"
     }).then((result) => {
@@ -99,6 +100,7 @@ const AdminUsers = () => {
         icon: 'error',
         title: 'Selecciona una opción',
         text: 'Debes seleccionar una opción en el filtrado de busqueda',
+        confirmButtonColor: 'var(--primary)',
       })
     }
     setSearchState(data);

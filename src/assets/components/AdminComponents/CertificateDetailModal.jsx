@@ -1,13 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { Form, Modal } from 'react-bootstrap';
-import useProvince from '../../../hook/useProvince';
+import React, { useEffect, useState } from 'react'
+import { Modal } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import Swal from 'sweetalert2';
-import useContractAdmin from '../../../hook/useContractAdmin';
 import useCertificateAdmin from '../../../hook/useCertificateAdmin';
 import PdfIcon from '../../images/icons/icon-pdf.svg';
-import FileComponent from '../FileComponent';
-import { format, formatISO, parseISO } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 
 const CertificateDetailModal = ({certificateByID, data, show, handleClose, nicById, setIsRefresh, isRefresh, idRequest}) => {
 
@@ -45,7 +42,7 @@ const CertificateDetailModal = ({certificateByID, data, show, handleClose, nicBy
     const approvedCertificate = (id) => {
         Swal.fire({
             title: "Aprobar paz y salvo",
-            html: `<p>Deseas aprobar al número de solicitud <span style="color: var(--primary);">${id}</span>?</p>`,
+            html: `<p>Desea aprobar al número de solicitud <span style="color: var(--primary);">${id}</span>?</p>`,
             icon: "question",
             iconColor: 'var(--primary)',
             showCancelButton: true,
@@ -68,7 +65,7 @@ const CertificateDetailModal = ({certificateByID, data, show, handleClose, nicBy
     const preApprovedCertificate = (id) => {
         Swal.fire({
             title: "Pre-aprobar paz y salvo",
-            html: `<p>Deseas pre-aprobar al número de solicitud <span style="color: var(--primary);">${id}</span>?</p>`,
+            html: `<p>Desea pre-aprobar al número de solicitud <span style="color: var(--primary);">${id}</span>?</p>`,
             icon: "question",
             iconColor: 'var(--primary)',
             showCancelButton: true,
@@ -84,7 +81,6 @@ const CertificateDetailModal = ({certificateByID, data, show, handleClose, nicBy
                     Comments: message?.length > 0 ? message : message2
                 }
                 ApprovedCertificateAdmin(certificate, setIsRefresh, handleClose);
-                handleClose();
             }
           })
     };
@@ -93,12 +89,12 @@ const CertificateDetailModal = ({certificateByID, data, show, handleClose, nicBy
         message.length > 1 || message2.length > 3 ? 
         Swal.fire({
             title: "Rechazar paz y salvo",
-            html: `<p>Deseas rechazar al número de solicitud <span style="color: var(--primary);">${id}</span>?</p>`,
+            html: `<p>Desea rechazar al número de solicitud <span style="color: var(--primary);">${id}</span>?</p>`,
             icon: "question",
             iconColor: 'var(--primary)',
             showCancelButton: true,
-            cancelButtonColor: "var(--primary)",
-            confirmButtonColor: "#d33",
+            confirmButtonColor: "var(--primary)",
+            cancelButtonColor: "#d33",
             cancelButtonText:'Cancelar',
             confirmButtonText: "Rechazar"
           }).then((result) => {

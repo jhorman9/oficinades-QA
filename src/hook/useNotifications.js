@@ -181,6 +181,7 @@ const useNotifications = () => {
                 icon: 'error',
                 title: 'Error',
                 text: error.response?.data.message || error.response?.data || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
             });
           });
       }
@@ -201,6 +202,7 @@ const useNotifications = () => {
                 icon: 'error',
                 title: 'Error',
                 text: error.response?.data.message || error.response?.data || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
           })
       }
@@ -228,6 +230,7 @@ const useNotifications = () => {
                 icon: 'error',
                 title: 'Error',
                 text: error.response?.data.message || error.response?.data || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
           })
       }
@@ -245,6 +248,7 @@ const useNotifications = () => {
                 icon: 'error',
                 title: 'Error',
                 text: error.response?.data.message || error.response?.data || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
           })
       }

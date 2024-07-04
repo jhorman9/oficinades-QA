@@ -1,5 +1,4 @@
 import axios from "axios";
-import { useState } from "react";
 import { useDispatch } from "react-redux";
 import Swal from "sweetalert2";
 import {setIsLoading} from "../store/slice/isLoading.slice";
@@ -20,6 +19,7 @@ const useForgotPassword = () => {
           icon: 'success',
           title: 'Correo enviado',
           text: 'Hemos enviado un correo para cambiar su contraseña',
+          confirmButtonColor: 'var(--primary)',
         })
 
         navigate('/');
@@ -31,12 +31,14 @@ const useForgotPassword = () => {
             icon: 'error',
             title: 'Email inválido',
             text: 'El correo electrónico que ha ingresado es inválido. Por favor, proceda a validar la información proporcionada',
+            confirmButtonColor: 'var(--primary)',
           })
         }else{
           Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'Algo salió mal',
+            confirmButtonColor: 'var(--primary)',
           })
         }
           dispatch(setIsLoading(false));
@@ -46,6 +48,7 @@ const useForgotPassword = () => {
         icon: 'error',
         title: 'Oops...',
         text: 'Darle click al recapcha',
+        confirmButtonColor: 'var(--primary)',
       })
     }
   }
@@ -72,6 +75,7 @@ const useForgotPassword = () => {
           icon: 'success',
           title: 'Contraseña cambiada',
           text: 'Su contraseña se ha cambiado exitosamente',
+          confirmButtonColor: 'var(--primary)',
         })
         reset();
         navigate('/');
@@ -82,6 +86,7 @@ const useForgotPassword = () => {
             icon: 'error',
             title: 'Oops...',
             text: 'Algo salió mal',
+            confirmButtonColor: 'var(--primary)',
           })
           dispatch(setIsLoading(false))
       });

@@ -41,6 +41,7 @@ const usePayment = () => {
                     icon: 'error',
                     title: 'Error',
                     text: 'Algo salió mal',
+                    confirmButtonColor: 'var(--primary)',
                   });
             }
         })
@@ -59,6 +60,7 @@ const usePayment = () => {
                 icon: 'error',
                 title: 'Error',
                 text: 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
         })
     };
@@ -79,12 +81,14 @@ const usePayment = () => {
                     icon: 'success',
                     title: 'Pago aprobado',
                     text: 'Su pago fue aprobado exitosamente',
+                    confirmButtonColor: 'var(--primary)',
                   });
             }else{
                 Swal.fire({
                     icon: 'error',
                     title: 'Algo salió mal',
                     text: textToTranslate[res.data.message],
+                    confirmButtonColor: 'var(--primary)',
                   });
             }
         })
@@ -94,6 +98,7 @@ const usePayment = () => {
                 icon: 'error',
                 title: 'Error',
                 text: 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
         })
         .finally(() => {
@@ -116,6 +121,7 @@ const usePayment = () => {
                 icon: 'error',
                 title: 'Error',
                 text: err.response?.data.message || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
               dispatch(setIsLoading(false));
         });
@@ -139,6 +145,7 @@ const usePayment = () => {
                 icon: 'error',
                 title: 'Error',
                 text: err.response?.data.message || 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
               dispatch(setIsLoading(false));
         })
@@ -154,6 +161,7 @@ const usePayment = () => {
                 icon: 'error',
                 title: 'Error',
                 text: 'Algo salió mal',
+                confirmButtonColor: 'var(--primary)',
               });
         })
     }
@@ -168,6 +176,7 @@ const usePayment = () => {
                 icon: 'error',
                 title: 'Error',
                 text: 'Algo salió mal con el token de pago',
+                confirmButtonColor: 'var(--primary)',
               });
         })
     }
@@ -193,6 +202,7 @@ const usePayment = () => {
                 icon: 'error',
                 title: 'Error',
                 text: 'Algo salió mal durante la eliminación de la tarjeta',
+                confirmButtonColor: 'var(--primary)',
               });
         })
     }
@@ -211,6 +221,7 @@ const usePayment = () => {
                 icon: 'error',
                 title: 'Error',
                 text: 'Algo salió mal en el proceso de obtener la factura',
+                confirmButtonColor: 'var(--primary)',
               });
             navigate('/');
         })

@@ -81,7 +81,7 @@ const Login = ({ handleInput, isInput }) => {
                                 <Link to={"/forgot-password"}>Olvidé mi contraseña</Link>
                             </div>
                             <div className='form-login_text-bottom right w-100 color-primary fw-bold'>
-                                <Link to={"/forgot-password"}>Pagar como invitado</Link>
+                                <Link target='_blank' to={"https://clickpago.merchantprocess.net/clientv2/client/IDAAN"}>Pagar como invitado</Link>
                             </div>
                         </div>
                         <div className="form__login__btns">

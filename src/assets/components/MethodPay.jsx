@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import $ from 'jquery';
-import getConfig from './utils/getConfig';
-import Swal from 'sweetalert2';
 
 function MethodPay() {
 
@@ -17,7 +14,7 @@ function MethodPay() {
       $(document).ready(function(){
         $.ajax({
           type: "GET",
-          url: "http://oficinaqas.idaan.gob.pa:5001/api/payment/GetPaymentsApiKey",
+          url: "http://oficinades.idaan.gob.pa:5001/api/payment/GetPaymentsApiKey",
           headers: {
             "Authorization": "Bearer " + localStorage.getItem('token')
           },
@@ -35,9 +32,8 @@ function MethodPay() {
                   $("#creditcard-container").slideDown(500);
                 }
               });
-            } else {
             }
-          }
+          },
         });
       });
 
@@ -66,7 +62,7 @@ function MethodPay() {
 
           $.ajax({
             type: "POST",
-            url: "http://oficinaqas.idaan.gob.pa:5001/api/card/AddCardOption",
+            url: "http://oficinades.idaan.gob.pa:5001/api/card/AddCardOption",
             data: JSON.stringify({
               CardOption: {
                 CardName: cardholderName,
@@ -82,10 +78,7 @@ function MethodPay() {
               "Authorization": "Bearer " + localStorage.getItem('token')
             },
             success: function (responseData) {
-              
             },
-            error: function (xhr, status, error) {
-            }
           });
 
         }
